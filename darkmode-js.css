@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* darkmode-js.css */
+/* ============================================ */
+
+/* gluttony-Sword（疑似要素。なくても可） */
+/* -------------------------------------------- */
+/* bs(Bootstrap) */
+.gluttony-Sword-bs {
+  position: fixed;
+  z-index: 1;
+  left: 16px;
+  bottom: -3px;
+}
+
+.gluttony-Sword-bs i {
+  font-style: normal;
+}
+
+.gluttony-Sword-bs i:after {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  font-size: 90%;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.4rem;
+  content: "Light";
+  color: #212529;
+  background: #ffc83d;
+}
+
+.darkmode--activated .gluttony-Sword-bs i:after {
+  font-weight: normal;
+  content: "Dark";
+  color: #fff;
+  background: #757575;
+}
+
+/* sample */
+/* -------------------------------------------- */
+.sample {
+  background: ghostwhite;
+  margin: 0.618rem;
+  padding: 0.618rem;
+  border-radius: 0.25rem;
+}
+
+h1 {
+  display: inline-block;
+  color: palevioletred;
+}
+
+.btn {
+  color: #FFF;
+  background: royalblue;
+}
+
+/* ダークモード時のclass */
+/* -------------------------------------------- */
+.darkmode--activated span {
+  color: palevioletred;
+}
